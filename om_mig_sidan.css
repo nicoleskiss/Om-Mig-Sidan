@@ -1,0 +1,93 @@
+h1, h2, h3, h4 {
+    text-align: center;
+    font-family: monospace;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;  
+    overflow: hidden;
+    border-right: 2px solid #00ff00;
+    white-space: nowrap;
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 50px; 
+}
+
+h2, h3, h4 {
+    font-size: 30px;
+    margin-top: 20px;  
+}
+
+.headers {
+    width: 410px;
+    margin: 50px auto; 
+}
+
+.headers_sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+}
+
+a {
+    color: #00ff00;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00cc66;
+}
+
+.familjen, .nära_och_kära, .jag, p {
+    font-family: monospace;
+    color: #00ff00;
+    margin: auto;
+    text-align: center;
+}
+
+.familjen, .nära_och_kära, .jag {
+    font-size: 20px;
+    width: 300px;          
+    height: auto;
+    margin-top: 50px;       
+    border: 2px solid #00ff00; 
+    border-radius: 5px;      
+    background-color: rgba(0, 255, 0, 0.1); 
+    padding: 20px;           
+}
+
+body {
+    height: auto; 
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 50px;  
+}
+
+ul, ol {
+    padding: 0;
+    margin: 20px auto;
+    width: 300px;
+}
+
+ul li, ol li {
+    list-style-type: none; 
+    padding: 10px;         
+    margin: 10px 0;        
+    border: 2px solid #00ff00;
+    border-radius: 5px;    
+    background-color: rgba(0, 255, 0, 0.1); 
+    font-family: monospace;
+    color: #00ff00;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff00; }
+}
